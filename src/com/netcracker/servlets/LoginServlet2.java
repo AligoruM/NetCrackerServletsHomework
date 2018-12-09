@@ -16,7 +16,7 @@ public class LoginServlet2 extends LoginServlet1 {
         if(Validation.checkPassword(password)) {
             CreateResponse.loginSuccessful(resp, login);
         }else{
-            resp.sendError(406);
+            resp.sendError(401);
         }
 
     }
